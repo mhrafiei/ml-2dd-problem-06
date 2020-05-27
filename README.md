@@ -81,29 +81,22 @@
 >* !git config --global user.name "mrafiei1"
 >* !git clone https://github.com/mhrafiei/ml-2dd-problem-06.git
 
-## 2. Get the .txt and .mat raw and filtered data
->* cd /content/ml-2dd-problem-06/data-matlab/
->* !wget -O data_inou.mat https://www.dropbox.com/s/59hulipyhfszh78/data_inou.mat?dl=0
->* !wget -O data_raw.mat https://www.dropbox.com/s/67o7me3skqfd797/data_raw.mat?dl=0
->* !wget -O data_inou.txt https://www.dropbox.com/s/pf4xr4l6tvdcage/data_inou.txt?dl=0
->* !wget -O data_raw.txt https://www.dropbox.com/s/2s4i0k114ve1bpw/data_raw.txt?dl=0
+## 2. Download npy version of data and indices necessary for ML (prefered) or run /content/ml-2dd-problem-06/code-keras-cnn/code_data.py after adjusting rtt and rrs in it
 
-## 3. Download npy version of data and indices necessary for ML (prefered) or run /content/ml-2dd-problem-06/code-keras-cnn/code_data.py after adjusting rtt and rrs in it
 >* cd /content/ml-2dd-problem-06/data-python/
->* !wget -O data.npy https://www.dropbox.com/s/295ayrnphrljca2/data.npy?dl=0
->* !wget -O ind.npy https://www.dropbox.com/s/v0zxbxyofh2wiej/ind.npy?dl=0 0 
->* #!python3.6 /content/ml-2dd-problem-06/code-keras-cnn/code_data.py
+>* !cat data_part_a* > data.zip
+>* !unzip data.zip
 
-## 4. Edit neuron architectures to be investigated in /content/ml-2dd-problem-06/code-keras-cnn/code_creator_keras_cnn.py and run it
+## 3. Cat /content/ml-2dd-problem-06/data-python/data_part_* to /content/ml-2dd-problem-06/data-python/data.zip and unzip it
 >* cd /content/ml-2dd-problem-06/code-keras-cnn/
 >* !python3.6 code_creator_keras_cnn.py
 
 
-## 5. Edit ML input parameters in /content/ml-2dd-problem-06/code-keras-cnn/cls_keras_cnn.py and run any prefered /content/ml-2dd-problem-06/code-keras-cnn/master_keras_cnn_* file
+## 4. Edit ML input parameters in /content/ml-2dd-problem-06/code-keras-cnn/cls_keras_cnn.py and run any prefered /content/ml-2dd-problem-06/code-keras-cnn/master_keras_cnn_* file
 >* #Example
 >* !python3.6 master_keras_cnn_1_1_64_32_16.py
  
-## 6. Results including the models and figures are availble at /content/ml-2dd-problem-06/data-python/
+## 5. Results including the models and figures are availble at /content/ml-2dd-problem-06/data-python/
 >* cd /content/ml-2dd-problem-06/data-python/
 
 ## P.S. Never delete temp.log files in subdirectories 
